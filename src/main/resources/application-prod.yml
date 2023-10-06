@@ -1,0 +1,5 @@
+spring:
+  datasource:
+    url: jdbc:mysql://10.128.0.3:3306/gcp
+    username: ktk
+    password: 1234
