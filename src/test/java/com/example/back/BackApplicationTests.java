@@ -12,7 +12,7 @@ class BackApplicationTests {
     @Test
     void contextLoads() {
 
-        assertThat(1+1).isZero();
+        assertThat(1+1).isEqualTo(2);
     }
 
 }
