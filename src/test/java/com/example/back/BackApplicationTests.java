@@ -13,6 +13,7 @@ class BackApplicationTests {
     void contextLoads() {
 
         assertThat(1+1).isEqualTo(2);
+        assertThat(2+2).isEqualTo(4);
     }
 
 }
