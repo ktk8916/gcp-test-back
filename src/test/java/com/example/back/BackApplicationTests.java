@@ -10,8 +10,7 @@ import static org.assertj.core.api.Assertions.*;
 class BackApplicationTests {
 
     @Test
-    void contextLoads() {
-
+    void test(){
+        assertThat(1+10).isEqualTo(10);
     }
-
 }
