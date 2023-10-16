@@ -1,0 +1,18 @@
+services:
+  my-mysql:
+    container_name: my-mysql
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD : 1234
+      MYSQL_DATABASE: test
+    ports:
+      - 3307:3306
+#    volumes:
+#      - /tmp/mysql:/var/lib/mysql
+  back:
+    image: ktk8916/spring-test
+    ports:
+      - 8081:8081
+    depends_on:
+      - my-mysql
+    restart: always
