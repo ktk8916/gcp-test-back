@@ -42,7 +42,7 @@ jobs:
         host: ${{secrets.HOST_IP}}
         username: ${{secrets.HOST_USERNANE}}
         key: ${{secrets.HOST_KEY}}
-        script:
+        script: |
           sudo docker stop ${{secrets.DOCKER_REPOSITORY}}
           sudo docker rm ${{secrets.DOCKER_REPOSITORY}}
           sudo docker pull ${{secrets.DOCKER_USERNAME}}/${{secrets.DOCKER_REPOSITORY}}
