@@ -40,5 +40,5 @@ jobs:
       uses: appleboy/ssh-action@v1.0.0
       with:
         host: ${{secrets.HOST_IP}}
-        username: ${{secrets.HOST_USERNAME}}
+        username: ${{secrets.HOST_USERNANE}}
         key: ${{secrets.HOST_KEY}}
