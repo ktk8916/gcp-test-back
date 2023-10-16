@@ -12,5 +12,7 @@ class BackApplicationTests {
     @Test
     void test(){
         assertThat(1+10).isEqualTo(10);
+        assertThat(1+10).isEqualTo(11);
+        assertThat(1+10).isEqualTo(12);
     }
 }
